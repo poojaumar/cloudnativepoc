@@ -1,0 +1,20 @@
+##create a docker image
+FROM golang:1.14
+
+##Creating a new directory
+#RUN mkdir -p /home/vmtasServices/bin/
+
+##Copying the corresponding libraries
+#COPY ./lib /usr/lib
+
+##Copying  binary and cfg file
+#COPY ./sipParser /home/vmtasServices/bin/
+#COPY ./cfg /home/vmtasServices/bin/
+ 
+#WORKDIR /usr/lib/
+#WORKDIR /home/vmtasServices/bin/
+
+
+RUN  ls -alrth
+#CMD ["sh","-c","service rsyslog restart"]
+#CMD ["sh", "-c", "./serviceId"]
